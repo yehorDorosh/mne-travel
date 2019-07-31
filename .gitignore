@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+css/*
+js/*
+img/*
+dist/*
+
+# Yulia
+templates/pages/node--4.html.twig
+templates/pages/page--node--4.html.twig

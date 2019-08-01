@@ -8,22 +8,33 @@
   },
   "author": "egor.dorosh",
   "license": "ISC",
-  "dependencies": {
-    "gulp": "^4.0.2"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
     "autoprefixer": "^9.6.1",
     "cssnano": "^4.1.10",
     "del": "^5.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
     "gulp-debug": "^4.0.0",
     "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-minify": "^3.1.0",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-sourcemaps": "^2.6.5",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
     "postcss-bem-fix": "^2.0.0",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.1.2",
     "postcss-preset-env": "^6.7.0",
-    "postcss-pxtorem": "^4.0.1"
+    "postcss-pxtorem": "^4.0.1",
+    "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.3.0"
   }
 }

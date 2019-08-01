@@ -1,0 +1,19 @@
+.h1 {
+  font-size: 18px;
+}
+
+@b block {
+  margin: 0;
+
+  @e elem {
+    color: red;
+
+    @m color-green {
+      color: green;
+    }
+  }
+
+  @m color-green {
+    color: green;
+  }
+}

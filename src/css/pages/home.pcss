@@ -1,47 +1,45 @@
-.hello-world {
-  display: inline-block;
-  margin: 20px auto;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 600;
-}
+@import "./organisms/page-hero.pcss";
 
 .img-tree {
   margin: 0 auto;
   width: 25%;
 }
 
-@b home-page-page-hero {
-  position: relative;
-  height: 500px;
-  background: url('../img/bg-1.jpg') center/cover no-repeat;
-  color: white;
+@b page-hero {
+  @m home-page {
+    background: url('../img/bg-tree.jpg') center/cover no-repeat;
+    color: var(--main-font-color);
 
-  & * {
-    position: relative;
-    z-index: 2;
-  }
+    & * {
+      position: relative;
+      z-index: 2;
+    }
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    background: linear-gradient(180deg, black 0%, transparent 100%);
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      background: linear-gradient(180deg, black 0%, transparent 100%);
+    }
   }
 
   @e content {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    @m home-page {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }
 
-.home-page__intro {
-  display: block;
+@b home-page {
+  @e intro {
+    background: var(--main-bg-color);
+  }
 }
 
 @b paralax {
@@ -52,25 +50,25 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @m 2 {
-    background-image: url('../img/bg-2.jpg');
+  @m beach {
+    background-image: url('../img/bg-beach.jpg');
   }
 
-  @m 3 {
-    background-image: url('../img/bg-3.jpg');
+  @m forest-underwater {
+    background-image: url('../img/bg-forest-underwater.jpg');
   }
 
-  @m 4 {
-    background-image: url('../img/bg-4.jpg');
+  @m forest {
+    background-image: url('../img/bg-forest.jpg');
   }
 
-  @m 5 {
-    background-image: url('../img/bg-5.jpg');
+  @m yacht {
+    background-image: url('../img/bg-yacht.jpg');
   }
 }
 
 .lorem {
   position: relative;
-  background: black;
-  color: white;
+  background: var(--main-bg-color);
+  color: var(--main-font-color);
 }
